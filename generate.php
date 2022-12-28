@@ -2,8 +2,9 @@
 
 $dataCategories = [];
 
+
 while($dirs = glob('*', GLOB_ONLYDIR)) {
-  $data[$dirs] = array("music" => glob("*.mp3"));
+  $dataCategories[$dirs] = array("music" => glob("*.mp3"));
 }
 
 
