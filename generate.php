@@ -3,10 +3,15 @@
 $dataFolder = [];
 
 
-while($dirs = glob('./*', GLOB_ONLYDIR)) {
+$dirs = glob('./*', GLOB_ONLYDIR);
+foreach ($dirs as $dir){
     if(glob("*.mp3")){
      $dataFolder[$dirs] = array("music" => glob("*.mp3")); 
     }
+}
+
+while($dirs = glob('./*', GLOB_ONLYDIR)) {
+
 }
 
 
