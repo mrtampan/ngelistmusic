@@ -3,7 +3,7 @@
 $dataFolder = [];
 
 
-while($dirs = glob('*', GLOB_ONLYDIR)) {
+while($dirs = glob('/*', GLOB_ONLYDIR)) {
     if(glob("*.mp3")){
      $dataFolder[$dirs] = array("music" => glob("*.mp3")); 
     }
